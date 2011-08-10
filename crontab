@@ -1,0 +1,4 @@
+MAILTO=tokuhirom@gmail.com
+
+*/10 *  *   *   * perl /home/dotcloud/code/bin/watcher.pl
+
