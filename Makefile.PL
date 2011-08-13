@@ -8,6 +8,7 @@ WriteMakefile(
         'App::MadEye'          => 0,
         'LWP::Protocol::https' => 0,
         'LWP::UserAgent'       => 0,
+        'MIME::Lite'           => 0,
     },
     MIN_PERL_VERSION => '5.008001',
     ( -d 'xt' and $ENV{AUTOMATED_TESTING} || $ENV{RELEASE_TESTING} )
