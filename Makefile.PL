@@ -10,6 +10,7 @@ WriteMakefile(
         'LWP::UserAgent'       => 0,
         'MIME::Lite'           => 0,
 		'DateTime'             => 0,
+		'Cache::FileCache'     => 0,
     },
     MIN_PERL_VERSION => '5.008001',
     ( -d 'xt' and $ENV{AUTOMATED_TESTING} || $ENV{RELEASE_TESTING} )
