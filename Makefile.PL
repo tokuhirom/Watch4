@@ -1,15 +1,16 @@
-use inc::Module::Install;
-use Module::Install::AuthorTests;
+use ExtUtils::MakeMaker;
 
-name 'Watch4';
-all_from 'lib/Watch4.pm';
-
-requires 'App::MadEye';
-requires 'LWP::Protocol::https';
-requires 'LWP::UserAgent';
-
-tests 't/*.t t/*/*.t t/*/*/*.t t/*/*/*/*.t';
-test_requires 'Test::More' => 0.96; # done_testing, subtest
-
-author_tests('xt');
-WriteAll;
+WriteMakefile(
+    NAME         => 'Watch4',
+    AUTHOR       => 'Tokuhiro Matsuno <tokuhirom@gmail.com>',
+    VERSION_FROM => 'lib/Watch4.pm',
+    PREREQ_PM    => {
+        'App::MadEye'          => 0,
+        'LWP::Protocol::https' => 0,
+        'LWP::UserAgent'       => 0,
+    },
+    MIN_PERL_VERSION => '5.008001',
+    ( -d 'xt' and $ENV{AUTOMATED_TESTING} || $ENV{RELEASE_TESTING} )
+    ? ( test => { TESTS => 't/*.t xt/*.t', }, )
+    : (),
+);
