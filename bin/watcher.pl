@@ -47,13 +47,18 @@ my $config = +{
             ]
         },
         +{ module => 'Notify::Debug', },
-        +{
-            module => 'Notify::Email',
+        +{ module => 'Notify::IMKayac',
             config => {
-                from_addr => 'tokuhirom@gmail.com',
-                to_addr   => 'tokuhirom@gmail.com',
-            }
+                username => 'tokuhirom'
+            },
         },
+#       +{
+#           module => 'Notify::Email',
+#           config => {
+#               from_addr => 'tokuhirom@gmail.com',
+#               to_addr   => 'tokuhirom@gmail.com',
+#           }
+#       },
     ],
 };
 
