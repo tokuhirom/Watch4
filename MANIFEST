@@ -1,18 +1,14 @@
 .gitignore
+bin/watcher.pl
 Changes
-inc/Module/Install.pm
-inc/Module/Install/AuthorTests.pm
-inc/Module/Install/Base.pm
-inc/Module/Install/Can.pm
-inc/Module/Install/Fetch.pm
-inc/Module/Install/Makefile.pm
-inc/Module/Install/Metadata.pm
-inc/Module/Install/Win32.pm
-inc/Module/Install/WriteAll.pm
+crontab
+dotcloud.yml
 lib/Watch4.pm
 Makefile.PL
 MANIFEST			This list of files
-META.yml
+MYMETA.json
+MYMETA.yml
+postinstall
 README
 t/00_compile.t
 xt/01_podspell.t
