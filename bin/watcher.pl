@@ -32,7 +32,8 @@ my $config = +{
                 timeout => 6,
                 target  => [
                     'http://64p.org/',    'http://frepan.org/',
-                    'http://xslate.org/', 'http://ljkdlsjaflfvedoor.com/'
+                    'http://xslate.org/',
+                   #  'http://ljkdlsjaflfvedoor.com/'
                 ],
                 user_agent => 'nothing',
             },
